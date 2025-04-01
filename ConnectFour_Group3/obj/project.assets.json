@@ -14,12 +14,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dad\\Documents\\cs\\CIS153\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
+      "projectUniqueName": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
       "projectName": "ConnectFour_Group3",
-      "projectPath": "C:\\Users\\Dad\\Documents\\cs\\CIS153\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
+      "projectPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
       "packagesPath": "C:\\Users\\Dad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dad\\Documents\\cs\\CIS153\\ConnectFour_Group3\\ConnectFour_Group3\\obj\\",
+      "outputPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
