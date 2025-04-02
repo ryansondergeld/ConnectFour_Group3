@@ -39,6 +39,21 @@ You are required to write a connect four program as part of a group.  This progr
 ![image](https://github.com/user-attachments/assets/18f2e153-99da-439c-ad31-c0bea4da3d29)
 ![image](https://github.com/user-attachments/assets/ecf28e5a-fca1-44aa-8eb5-c6e6d0cee874)
 
+## List of Screens
+- Title Screen
+  - Button to 1P game
+  - Button to 2P game
+  - Button to Statistics Screen
+  - Button to exit / close
+- 1P Screen
+  - Game
+  - Button to exit / close
+- 2P Screen
+  - Game
+  - Button to exit / close
+- Statistics
+  - Back button to title screen
+  - Button to exit / close   
 
 ## To Do:
 - [x] Create Github
