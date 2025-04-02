@@ -16,6 +16,29 @@ You are required to write a connect four program as part of a group.  This progr
 ### Classes
 - You must include a cell class and a board class.  You must have private members and public functions.  The functionality and design of these classes is determined by you.  However, I will be grading you on you implementation.
 
+## Connect Four board
+- 7 columns
+- 6 rows
+
+![image](https://github.com/user-attachments/assets/22591938-32bc-4fe6-9581-d7562995fe94)
+
+### Checking Rows for blocks or wins
+- All possible row combinations will be 4 sliding windows on each row:
+
+![image](https://github.com/user-attachments/assets/7efe3685-d09c-4819-a76b-b5052ee16363)
+
+### Checking Columns for blocks or wins
+- All possible column combinations will be 3 sliding windows on each column:
+
+![image](https://github.com/user-attachments/assets/0cb043f4-7a16-4455-9daf-3839704fe8ce)
+
+### Checking Diagonals
+- Diagonals can be checked from the 4 tiles on the left and right - either 3 rows from the top down OR 3 rows from the botom up:
+
+![image](https://github.com/user-attachments/assets/b0a71bec-aa86-4b5f-83fd-83698b848d58)
+![image](https://github.com/user-attachments/assets/18f2e153-99da-439c-ad31-c0bea4da3d29)
+![image](https://github.com/user-attachments/assets/ecf28e5a-fca1-44aa-8eb5-c6e6d0cee874)
+
 
 ## To Do:
 - [x] Create Github
