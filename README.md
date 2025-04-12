@@ -63,14 +63,14 @@ You are required to write a connect four program as part of a group.  This progr
 
 
 ## Point Breakdown
-- [ ] Main Menu Options (10)
-- [ ] Exit completely closes the application (10)
+- [x] Main Menu Options (10)
+- [x] Exit completely closes the application (10)
 - [ ] Winning conditions (20)
 - [ ] Game over form options (10)
 - [ ] Hovering functionality (10)
 - [ ] Restart Game functionality (10)
-- [ ] All forms load at same position (10)
-- [ ] Only one form open at a time (10)
+- [x] All forms load at same position (10)
+- [x] Only one form open at a time (10)
 - [ ] Review game functionality (20)
 - [ ] AI functionality 20)
 - [ ] Player statistics (20)
