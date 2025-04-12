@@ -46,10 +46,12 @@ You are required to write a connect four program as part of a group.  This progr
   - Button to Statistics Screen
   - Button to exit / close
 - 1P Screen
-  - Game
+  - Back button to title screen
+  - Game reset button (after game over)
   - Button to exit / close
 - 2P Screen
-  - Game
+  - Back button to title screen
+  - Game Reset button (after game over)
   - Button to exit / close
 - Statistics
   - Back button to title screen
@@ -57,7 +59,7 @@ You are required to write a connect four program as part of a group.  This progr
 
 ## To Do:
 - [x] Create Github
-- [ ] Add All users to Github
+- [x] Add All users to Github
 - [ ] Test that all users are able to pull / push changes
 - [ ] Divide responsibilities
 
