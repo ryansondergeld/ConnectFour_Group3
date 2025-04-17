@@ -1,12 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\sync\\programming\\github\\connectfour_group3\\connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\MainForm.cs",
+              "ToolTip": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T23:26:00.013Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
