@@ -32,3 +32,6 @@ C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.
 C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.pdb
 C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.genruntimeconfig.cache
 C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ref\ConnectFour_Group3.dll
+C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Game1P.resources
+C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Game2P.resources
+C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Properties.Resources.resources
