@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\Dad\\.nuget\\packages\\",
         "outputPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
