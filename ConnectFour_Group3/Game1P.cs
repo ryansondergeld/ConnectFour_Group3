@@ -28,13 +28,13 @@ public partial class Game1P : Form
         P1PictureBox02.Location = new Point(64, 64);
 
         // Example 3 - bottom right corner
-        P2PictureBox01.BackColor= Color.Transparent;
+        P2PictureBox01.BackColor = Color.Transparent;
         P2PictureBox01.Parent = BoardPictureBox;
         P2PictureBox01.Location = new Point(304, 256);
 
         // Example 4 - diagonal up
-        P2PictureBox02.BackColor= Color.Transparent;
-        P2PictureBox02.Parent= BoardPictureBox;
+        P2PictureBox02.BackColor = Color.Transparent;
+        P2PictureBox02.Parent = BoardPictureBox;
         P2PictureBox02.Location = new Point(256, 208);
     }
 
