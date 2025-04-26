@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectFour_Group3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a3e5bd5fbe776fcdec09d881ea81c48c102ba0c")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e910b17c4d1ef3ff225f2c09e9784e32595b9398")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectFour_Group3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectFour_Group3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
