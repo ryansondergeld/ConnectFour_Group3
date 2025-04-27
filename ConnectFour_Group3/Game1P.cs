@@ -37,19 +37,20 @@ public partial class Game1P : Form
         P2PictureBox02.Parent = BoardPictureBox;
         P2PictureBox02.Location = new Point(256, 208);
     }
-
+    //-------------------------------------------------------------------------
     private void BackButton_Click(object sender, EventArgs e)
     {
         Close();
     }
-
+    //-------------------------------------------------------------------------
     private void ExitButton_Click(object sender, EventArgs e)
     {
         Application.Exit();
     }
-
+    //-------------------------------------------------------------------------
     private void Game1P_Load(object sender, EventArgs e)
     {
 
     }
+    //-------------------------------------------------------------------------
 }

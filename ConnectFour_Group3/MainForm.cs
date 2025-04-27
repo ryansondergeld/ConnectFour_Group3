@@ -23,7 +23,7 @@ namespace ConnectFour_Group3
             // Update all Positions
             UpdateFormPositions();
         }
-
+        //-------------------------------------------------------------------------
         private void UpdateFormPositions()
         {
             foreach (var f in _forms)
@@ -34,7 +34,7 @@ namespace ConnectFour_Group3
                 f.Size = Size;
             }
         }
-
+        //-------------------------------------------------------------------------
         private void ShowForm(int i)
         {
             // Hide main menu
@@ -50,30 +50,31 @@ namespace ConnectFour_Group3
             // Show the main menu again
             Show();
         }
-
+        //-------------------------------------------------------------------------
         private void Game1PButton_Click(object sender, EventArgs e)
         {
             ShowForm(1);
         }
-
+        //-------------------------------------------------------------------------
         private void Game2PButton_Click(object sender, EventArgs e)
         {
             ShowForm(2);
         }
-
+        //-------------------------------------------------------------------------
         private void StatisticsButton_Click(object sender, EventArgs e)
         {
             ShowForm(3);
         }
-
+        //-------------------------------------------------------------------------
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        //-------------------------------------------------------------------------
         private void MainForm_Move(object sender, EventArgs e)
         {
             UpdateFormPositions();
         }
+        //-------------------------------------------------------------------------
     }
 }

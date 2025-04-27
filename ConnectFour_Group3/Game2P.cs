@@ -6,14 +6,15 @@ public partial class Game2P : Form
     {
         InitializeComponent();
     }
-
+    //-------------------------------------------------------------------------
     private void BackButton_Click(object sender, EventArgs e)
     {
         Close();
     }
-
+    //-------------------------------------------------------------------------
     private void ExitButton_Click(object sender, EventArgs e)
     {
         Application.Exit();
     }
+    //-------------------------------------------------------------------------
 }
