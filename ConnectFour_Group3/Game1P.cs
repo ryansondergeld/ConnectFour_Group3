@@ -17,11 +17,8 @@ public partial class Game1P : Form
         _board = new Board();
         _turn = 1;
         
-        // Try setting a new cell
-        _board.setCell(new Cell(1), 4, 4);
-        _board.setCell(new Cell(2), 4, 3);
-
-        CreateBoxes();
+        // Create Events
+        CreateMouseEvents();
         
         // Call this to update the graphics
         _gfx.Update(_board);
@@ -61,7 +58,7 @@ public partial class Game1P : Form
         Reset();
     }
     //-------------------------------------------------------------------------
-    private void CreateBoxes()
+    private void CreateMouseEvents()
     {
         for (var i = 0; i < 42; i++)
         {
@@ -82,10 +79,10 @@ public partial class Game1P : Form
         // Get the column location
         var c = (p.Location.X - 16) / 48;
         
-        // Get the row 
+        // Get the row available to put a piece in
         var r = _board.GetRowAvailable(c);
 
-        // Guard clause = if the column is full, do nothing
+        // Guard clause = if the column is full, do nothing on click or hover
         if (r == -1) { return;}
         
         // Otherwise, let's put something in that spot
@@ -93,16 +90,14 @@ public partial class Game1P : Form
         
         // And update the board
         _gfx.Update(_board);
-
-        bool win =_board.checkWin(c, r, _turn);
-
+        
+        // Check if our move caused a win
+        bool win = _board.CheckWin(c, r);
         Console.WriteLine(win);
         
-        // Change Turn
+        // If there is no win, change the turn
         ChangeTurn();
-        
-        // Console output for debugging
-        //Console.WriteLine("Column clicked : " + c.ToString() + "Row Avilable = " + r.ToString());
+
     }
     //-------------------------------------------------------------------------
     public static void ColumnHover(object sender, EventArgs e)

@@ -31,17 +31,16 @@ partial class Game2P
     /// </summary>
     private void InitializeComponent()
     {
-        BackButton = new Button();
-        ExitButton = new Button();
-        pictureBox1 = new PictureBox();
-        ((ISupportInitialize)pictureBox1).BeginInit();
+        BackButton = new System.Windows.Forms.Button();
+        ExitButton = new System.Windows.Forms.Button();
+        ResetButton = new System.Windows.Forms.Button();
         SuspendLayout();
         // 
         // BackButton
         // 
-        BackButton.Location = new Point(484, 12);
+        BackButton.Location = new System.Drawing.Point(484, 12);
         BackButton.Name = "BackButton";
-        BackButton.Size = new Size(128, 64);
+        BackButton.Size = new System.Drawing.Size(128, 64);
         BackButton.TabIndex = 0;
         BackButton.Text = "Back To Main";
         BackButton.UseVisualStyleBackColor = true;
@@ -49,42 +48,41 @@ partial class Game2P
         // 
         // ExitButton
         // 
-        ExitButton.Location = new Point(484, 245);
+        ExitButton.Location = new System.Drawing.Point(484, 245);
         ExitButton.Name = "ExitButton";
-        ExitButton.Size = new Size(128, 64);
+        ExitButton.Size = new System.Drawing.Size(128, 64);
         ExitButton.TabIndex = 1;
         ExitButton.Text = "Exit";
         ExitButton.UseVisualStyleBackColor = true;
         ExitButton.Click += ExitButton_Click;
         // 
-        // pictureBox1
+        // ResetButton
         // 
-        pictureBox1.Image = Properties.Resources.Board;
-        pictureBox1.Location = new Point(8, 8);
-        pictureBox1.Margin = new Padding(2);
-        pictureBox1.Name = "pictureBox1";
-        pictureBox1.Size = new Size(365, 309);
-        pictureBox1.TabIndex = 3;
-        pictureBox1.TabStop = false;
+        ResetButton.Location = new System.Drawing.Point(484, 82);
+        ResetButton.Name = "ResetButton";
+        ResetButton.Size = new System.Drawing.Size(128, 64);
+        ResetButton.TabIndex = 2;
+        ResetButton.Text = "Reset";
+        ResetButton.UseVisualStyleBackColor = true;
+        ResetButton.Click += ResetButton_Click;
         // 
         // Game2P
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(624, 321);
-        Controls.Add(pictureBox1);
+        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+        ClientSize = new System.Drawing.Size(624, 321);
+        Controls.Add(ResetButton);
         Controls.Add(ExitButton);
         Controls.Add(BackButton);
-        Name = "Game2P";
         Text = "Game2P";
-        ((ISupportInitialize)pictureBox1).EndInit();
+        Load += Game2P_Load;
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button ResetButton;
 
     private System.Windows.Forms.Button BackButton;
     private System.Windows.Forms.Button ExitButton;
 
     #endregion
-
-    private PictureBox pictureBox1;
 }

@@ -358,14 +358,13 @@
         }
         //---------------------------------------------------------------------
         // Updated function - other goes out of bounds
-        public bool CheckWin(int column, int row, int team)
+        public bool CheckWin(int column, int row)
         {
             // Check the row, column, forward diagonal, and reverse diagonal
             if (CheckRow(row)) { return true;}
             if (CheckColumn(column)) { return true;}
-            if (CheckReverseDiagonal(column, row)) { return true; }
-            if (CheckForwardDiagonalUp(column, row)) { return true; }
-            if (CheckForwardDiagonalDown(column, row)) { return true; }
+            if (CheckReverseDiagonal()) { return true; }
+            if (CheckForwardDiagonals()) { return true; }
             
             // Return false by default
             return false;
@@ -384,10 +383,8 @@
                 // If the cell states are all the same, return true
                 if (a.getCellState() == b.getCellState() && 
                     a.getCellState() == c.getCellState() &&
-                    a.getCellState() == d.getCellState())
-                {
-                    return true;
-                }
+                    a.getCellState() == d.getCellState() &&
+                    a.getCellState() != 0 ) { return true; }
             }
 
             // By default, return false
@@ -408,50 +405,57 @@
                 // If the cell states are all the same, return true
                 if (a.getCellState() == b.getCellState() && 
                     a.getCellState() == c.getCellState() &&
-                    a.getCellState() == d.getCellState())
-                {
-                    return true;
-                }
-
+                    a.getCellState() == d.getCellState() &&
+                    a.getCellState() != 0) { return true; }
             }
 
             // By Default, return false
             return false;
         }
         //---------------------------------------------------------------------
-        public bool CheckReverseDiagonal(int column, int row)
+        public bool CheckReverseDiagonal()
         {
+            for (int column = 0; column < 4; column++)
+            {
+                for (int row = 0; row < 3; row++)
+                {
+                    var a = GetCell(column, row);
+                    var b = GetCell(column + 1, row + 1);
+                    var c = GetCell(column + 2, row + 2);
+                    var d = GetCell(column + 3, row + 3);
+                    
+                    // If the cell states are all the same, return true
+                    if (a.getCellState() == b.getCellState() && 
+                        a.getCellState() == c.getCellState() &&
+                        a.getCellState() == d.getCellState() &&
+                        a.getCellState() != 0) { return true; }
+                }
+                
+            }
+            
             // By Default, return false
             return false;
         }
         //---------------------------------------------------------------------
-        public bool CheckForwardDiagonalUp(int column, int row)
+        public bool CheckForwardDiagonals()
         {
-            // Guard clause - can only check forward diagonals upwards on
-            // columns 0 - 4
-            // rows 4 - 6
-            if (column < 4) { return false;}
-            if (row > 2 ) { return false; }
-            
-            // At this point, we can check diagonally up
-            var a = GetCell(column, row);
-            var b = GetCell(column + 1, row + 1);
-            var c = GetCell(column + 2, row + 2);
-            var d = GetCell(column + 3, row + 3);
-            
-            // By Default, return false
-            return false;
-        }
-        //---------------------------------------------------------------------
-        public bool CheckForwardDiagonalDown(int column, int row)
-        {
-            // Guard clause - can only check forward diagonals upwards on
-            // columns 0 - 4
-            // rows 4 - 6
-            if (column < 4) { return false;}
-            if (row > 2 ) { return false; }
-            
-            
+            for (int column = 0; column < 3; column++)
+            {
+                for (int row = 3; row < 6; row++)
+                {
+                    var a = GetCell(column, row);
+                    var b = GetCell(column + 1, row - 1);
+                    var c = GetCell(column + 2, row - 2);
+                    var d = GetCell(column + 3, row - 3);
+                    
+                    // If the cell states are all the same, return true
+                    if (a.getCellState() == b.getCellState() && 
+                        a.getCellState() == c.getCellState() &&
+                        a.getCellState() == d.getCellState() &&
+                        a.getCellState() != 0) { return true; }
+                }
+                
+            }
             
             // By Default, return false
             return false;
