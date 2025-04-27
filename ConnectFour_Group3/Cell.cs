@@ -2,27 +2,18 @@
 
 class Cell
 {
-    private int cell_state = 0; //0 Empty, 1 Player1, 2 Player2
+    private int _value; //0 Empty, 1 Player1, 2 Player2
         
     public Cell()
     {
-        cell_state = 0;
+        _value = 0;
     }
 
-    public Cell(int init_cell_state)
-    {
-        cell_state = init_cell_state;
-    }
+    public Cell(int value) { _value = value; }
         
     //Getter Functions
-    public int getCellState() 
-    { 
-        return cell_state; 
-    }
+    public int getCellState() { return _value; }
 
     //Setter Functions
-    public void setCellState(int new_cell_state) 
-    { 
-        cell_state = new_cell_state; 
-    }
+    public void setCellState(int value) { _value = value; }
 }

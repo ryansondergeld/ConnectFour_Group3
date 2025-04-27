@@ -1,41 +1,49 @@
-﻿namespace ConnectFour_Group3;
+﻿using System.Diagnostics;
+
+namespace ConnectFour_Group3;
 
 public partial class Game1P : Form
 {
+    private Gfx _gfx;
+    private Board _board;
+    private int _turn;
+    
     public Game1P()
     {
         InitializeComponent();
+        
+        // Create graphics here
+        _gfx = new Gfx(this);
+        _board = new Board();
+        _turn = 1;
+        
+        // Try setting a new cell
+        _board.setCell(new Cell(1), 4, 4);
+        _board.setCell(new Cell(2), 4, 3);
 
-        // Picture box items
+        CreateBoxes();
+        
+        // Call this to update the graphics
+        _gfx.Update(_board);
 
-        // The picture box items can become transparent by setting the BackColor property to transparent and
-        // Setting the parent as the Board.  
-        // 
-        // When the Board is set as the parent, the location is relative to the upper-left corner.
-        // The first cell is at 16, 16
-        //
-        // From there, add 48 to get to the other cells:
-        // 16, 64, 112, 160, 208, 256, 304
+    }
+    //-------------------------------------------------------------------------
+    private void Reset()
+    {
+        // Generate a new board
+        _board = new Board();
 
-        // Example 1 - top left corner
-        P1PictureBox01.BackColor = Color.Transparent;
-        P1PictureBox01.Parent = BoardPictureBox;
-        P1PictureBox01.Location = new Point(16, 16);
-
-        // Example 2 - diagonal down
-        P1PictureBox02.BackColor = Color.Transparent;
-        P1PictureBox02.Parent = BoardPictureBox;
-        P1PictureBox02.Location = new Point(64, 64);
-
-        // Example 3 - bottom right corner
-        P2PictureBox01.BackColor = Color.Transparent;
-        P2PictureBox01.Parent = BoardPictureBox;
-        P2PictureBox01.Location = new Point(304, 256);
-
-        // Example 4 - diagonal up
-        P2PictureBox02.BackColor = Color.Transparent;
-        P2PictureBox02.Parent = BoardPictureBox;
-        P2PictureBox02.Location = new Point(256, 208);
+        // Upatte the graphics
+        _gfx.Update(_board);
+        
+        // Set turn back to 1st player
+        _turn = 1;
+    }
+    //-------------------------------------------------------------------------
+    private void ChangeTurn()
+    {
+        if (_turn == 1) { _turn = 2; }
+        else { _turn = 1; }
     }
     //-------------------------------------------------------------------------
     private void BackButton_Click(object sender, EventArgs e)
@@ -50,7 +58,71 @@ public partial class Game1P : Form
     //-------------------------------------------------------------------------
     private void Game1P_Load(object sender, EventArgs e)
     {
+        Reset();
+    }
+    //-------------------------------------------------------------------------
+    private void CreateBoxes()
+    {
+        for (var i = 0; i < 42; i++)
+        {
+            PictureBox p = _gfx.GetCell(i);
+            p.MouseClick += ColumnClick;
+            p.MouseHover += ColumnHover;
+        }
+    }
+    //-------------------------------------------------------------------------
+    public void ColumnClick(object sender, EventArgs e)
+    {
+        // Get the PictureBox
+        var p = sender as PictureBox;
+        
+        // Guard Clause = exit if null
+        if (p == null) { return;}
+        
+        // Get the column location
+        var c = (p.Location.X - 16) / 48;
+        
+        // Get the row 
+        var r = _board.GetRowAvailable(c);
 
+        // Guard clause = if the column is full, do nothing
+        if (r == -1) { return;}
+        
+        // Otherwise, let's put something in that spot
+        _board.SetCell(c, r, _turn);
+        
+        // And update the board
+        _gfx.Update(_board);
+
+        bool win =_board.checkWin(c, r, _turn);
+
+        Console.WriteLine(win);
+        
+        // Change Turn
+        ChangeTurn();
+        
+        // Console output for debugging
+        //Console.WriteLine("Column clicked : " + c.ToString() + "Row Avilable = " + r.ToString());
+    }
+    //-------------------------------------------------------------------------
+    public static void ColumnHover(object sender, EventArgs e)
+    {
+        // Get the PictureBox
+        var p = sender as PictureBox;
+        
+        // Guard Clause = exit if null
+        if (p == null) { return;}
+        
+        // Get the column location
+        var c = (p.Location.X - 16) / 48;
+        
+        // Console output for debugging
+        Console.WriteLine("Column hover!" + c.ToString());
+    }
+    //-------------------------------------------------------------------------
+    private void ResetButton_Click(object sender, EventArgs e)
+    {
+        Reset();
     }
     //-------------------------------------------------------------------------
 }

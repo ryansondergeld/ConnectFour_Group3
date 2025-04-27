@@ -1,13 +1,26 @@
 ﻿namespace ConnectFour_Group3;
 
-   class Board 
-    {
+   class Board
+   {
+       private const int Rows = 6;
+       private const int Columns = 7;
+
         //connect four grid is 7 wide and 6 tall.
-        private Cell[,] cell_matrix = new Cell[7,6];
+        private Cell[,] cell_matrix = new Cell[Columns, Rows];
 
         public Board()
         {
-            Cell[,] cell_matrix = new Cell[7, 6];
+            // Create a blank board
+            cell_matrix = new Cell[Columns, Rows];
+            
+            // Here we need to add all cell components so they are not null - assume blank value
+            for (int c = 0; c < Columns; c++)
+            {
+                for (int r = 0; r < Rows; r++)
+                {
+                    cell_matrix[c, r] = new Cell();
+                }
+            }
         }
 
         public Board(Cell[,] init_cells)
@@ -19,6 +32,11 @@
         public Cell[,] getCells() 
         { 
             return cell_matrix; 
+        }
+
+        public Cell GetCell(int column, int row)
+        {
+            return cell_matrix[column, row];
         }
 
         public Cell[] getRow(int row)  // Might be used for AI or win validation, thought to add just in case.
@@ -37,6 +55,25 @@
                 return cell_row;
             }
             return cell_row;
+        }
+
+        public int GetRowAvailable(int column)
+        {
+            int row = -1;
+            // We want to look at the column passed in and get the lowest row
+            for (int r = 0; r < 6; r++)
+            {
+                // Get the Cell
+                Cell c = GetCell(column, r);
+                
+                // If the next cell is empty, set row to that cell
+                if (c.getCellState() == 0)
+                {
+                    row = r;
+                }
+            }
+
+            return row;
         }
 
         public Cell[] getColumn(int column)  // Might be used for AI or win validation, thought to add just in case.
@@ -63,20 +100,18 @@
             cell_matrix = new_cell_matrix; 
         }
 
-        public void setCell(Cell new_cell,int row, int column) { 
+        public void setCell(Cell new_cell,int row, int column) 
+        { 
+            if (row < 0 || row > 6) { row = 0; }
 
-            if (row < 0 || row > 6)
-            {
-                row = 0;
-            }
-
-            if (column < 0 || column > 6)
-            {
-                column = 0;
-            }
+            if (column < 0 || column > 6) { column = 0; }
 
             cell_matrix[row, column] = new_cell;
+        }
 
+        public void SetCell(int column, int row, int value)
+        {
+            cell_matrix[column, row].setCellState(value);
         }
 
         /// ///////////////////////////////////////
@@ -321,20 +356,119 @@
             }
             return false;
         }
+        //---------------------------------------------------------------------
+        // Updated function - other goes out of bounds
+        public bool CheckWin(int column, int row, int team)
+        {
+            // Check the row, column, forward diagonal, and reverse diagonal
+            if (CheckRow(row)) { return true;}
+            if (CheckColumn(column)) { return true;}
+            if (CheckReverseDiagonal(column, row)) { return true; }
+            if (CheckForwardDiagonalUp(column, row)) { return true; }
+            if (CheckForwardDiagonalDown(column, row)) { return true; }
+            
+            // Return false by default
+            return false;
+        }
+        //---------------------------------------------------------------------
+        public bool CheckColumn(int column)
+        {
+            // There are 3 possible winning points in a column
+            for (int i = 0; i < 3; i++)
+            {
+                var a = GetCell(column, i);
+                var b = GetCell(column, i + 1);
+                var c = GetCell(column, i + 2);
+                var d = GetCell(column, i + 3);
+                
+                // If the cell states are all the same, return true
+                if (a.getCellState() == b.getCellState() && 
+                    a.getCellState() == c.getCellState() &&
+                    a.getCellState() == d.getCellState())
+                {
+                    return true;
+                }
+            }
+
+            // By default, return false
+            return false;
+        }
         
+        //---------------------------------------------------------------------
+        public bool CheckRow(int row)
+        {
+            // There are 4 possible winning points in a row
+            for (int i = 0; i < 4; i++)
+            {
+                var a = GetCell(i, row);
+                var b = GetCell(i + 1, row);
+                var c = GetCell(i + 2, row);
+                var d = GetCell(i + 3, row);
+
+                // If the cell states are all the same, return true
+                if (a.getCellState() == b.getCellState() && 
+                    a.getCellState() == c.getCellState() &&
+                    a.getCellState() == d.getCellState())
+                {
+                    return true;
+                }
+
+            }
+
+            // By Default, return false
+            return false;
+        }
+        //---------------------------------------------------------------------
+        public bool CheckReverseDiagonal(int column, int row)
+        {
+            // By Default, return false
+            return false;
+        }
+        //---------------------------------------------------------------------
+        public bool CheckForwardDiagonalUp(int column, int row)
+        {
+            // Guard clause - can only check forward diagonals upwards on
+            // columns 0 - 4
+            // rows 4 - 6
+            if (column < 4) { return false;}
+            if (row > 2 ) { return false; }
+            
+            // At this point, we can check diagonally up
+            var a = GetCell(column, row);
+            var b = GetCell(column + 1, row + 1);
+            var c = GetCell(column + 2, row + 2);
+            var d = GetCell(column + 3, row + 3);
+            
+            // By Default, return false
+            return false;
+        }
+        //---------------------------------------------------------------------
+        public bool CheckForwardDiagonalDown(int column, int row)
+        {
+            // Guard clause - can only check forward diagonals upwards on
+            // columns 0 - 4
+            // rows 4 - 6
+            if (column < 4) { return false;}
+            if (row > 2 ) { return false; }
+            
+            
+            
+            // By Default, return false
+            return false;
+        }
+        //---------------------------------------------------------------------
         public void playerTurn(bool isPlayer1, bool isBotGame)
         {
-
-
+            
         }
-
+        //---------------------------------------------------------------------
         // checks to see if th4e player can make a move in that column, (column might be full)
         public bool validInput()
         {
 
             return false;
         }
-
+        //---------------------------------------------------------------------
         /////////////////////////////////////////////////////////////////
         /// DEBUG
         /////////////////////////////////////////////////////////////////
