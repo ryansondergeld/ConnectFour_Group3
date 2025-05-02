@@ -9,7 +9,7 @@ public partial class GameOver : Form
     {
         InitializeComponent();
         _text = "nobody wins";
-        _action = "quit";
+        _action = "";
     }
     //-------------------------------------------------------------------------
     // Functions

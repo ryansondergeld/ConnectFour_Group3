@@ -59,7 +59,8 @@ public partial class Game2P : Form
             // Set the Column Click and Hover events for each PictureBox
             PictureBox p = _gfx.GetCell(i);
             p.MouseClick += ColumnClick;
-            p.MouseHover += ColumnHover;
+            p.MouseEnter += ColumnEnter;  //mouse enter is much more responsive. mouve hover takes a second.
+            p.MouseLeave += ColumnLeave;
         }
     }
     //-------------------------------------------------------------------------
@@ -80,7 +81,8 @@ public partial class Game2P : Form
         
         // Get the action
         if (g.GetAction() == "play") { Reset(); }
-        else { Close(); }
+        if (g.GetAction() == "quit") { Close(); }
+        //else { Close(); }
     }
     //-------------------------------------------------------------------------
     // Event Handlers
@@ -107,6 +109,8 @@ public partial class Game2P : Form
         // Get the row available to put a piece in
         var r = _board.GetRowAvailable(c);
 
+        System.Diagnostics.Debug.WriteLine("c == " + c + ", r == " + r);
+
         // Guard clause = if the column is full, do nothing on click or hover
         if (r == -1) { return; }
         
@@ -117,7 +121,7 @@ public partial class Game2P : Form
         _gfx.Update(_board);
         
         // Check if our move caused a win
-        if (_board.CheckWin(c, r))
+        if (_board.CheckWin(c, r, -1, false))
         {
             // Game over Condition here
             _playing = false;
@@ -132,8 +136,9 @@ public partial class Game2P : Form
         
     }
     //-------------------------------------------------------------------------
-    private void ColumnHover(object sender, EventArgs e)
+    private void ColumnEnter(object sender, EventArgs e)
     {
+        if (!_playing) { return; }
         // Get the PictureBox
         var p = sender as PictureBox;
         
@@ -142,9 +147,16 @@ public partial class Game2P : Form
         
         // Get the column location
         var c = (p.Location.X - 16) / 48;
-        
+
+        _gfx.Update(_board);
+        _gfx.UpdateCell((p.Location.X - 16) / 48, 0,_turn);
         // Console output for debugging
-        Console.WriteLine("Column hover!" + c.ToString());
+        //System.Diagnostics.Debug.WriteLine("HOVER " + c);
+    }
+    //-------------------------------------------------------------------------
+    private void ColumnLeave(object sender, EventArgs e)
+    {
+        _gfx.Update(_board);
     }
     //-------------------------------------------------------------------------
     private void ExitButton_Click(object sender, EventArgs e)
@@ -160,6 +172,27 @@ public partial class Game2P : Form
     private void Game2P_Load(object sender, EventArgs e)
     {
         Reset();
+    }
+    //-------------------------------------------------------------------------
+
+
+    //--------------------------
+    //  Statistics File
+    //
+    //  Player wins
+    //  Ai Wins
+    //  Ties
+    //  Total Games
+    //--------------------------
+    public string[] ReadStatsFile()
+    {
+        return File.ReadAllLines("../../../Statistics.txt");
+    }
+    //-------------------------------------------------------------------------
+    public void WriteStatsFile(string[] new_lines)
+    {
+        File.WriteAllText("../../../Statistics.txt", "");
+        File.WriteAllLines("../../../Statistics.txt", new_lines);
     }
     //-------------------------------------------------------------------------
 }

@@ -8,24 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dad\\.nuget\\packages\\": {},
+    "C:\\Users\\skear\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
+      "projectUniqueName": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
       "projectName": "ConnectFour_Group3",
-      "projectPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
-      "packagesPath": "C:\\Users\\Dad\\.nuget\\packages\\",
-      "outputPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\obj\\",
+      "projectPath": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\ConnectFour_Group3.csproj",
+      "packagesPath": "C:\\Users\\skear\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\skear\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -52,7 +50,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -76,7 +75,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

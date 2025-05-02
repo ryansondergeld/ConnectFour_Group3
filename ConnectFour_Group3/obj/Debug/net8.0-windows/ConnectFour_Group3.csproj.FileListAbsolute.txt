@@ -38,3 +38,5 @@ C:\Sync\Programming\Github\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.
 C:\Users\skear\OneDrive\Documents\GitHub\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Game1P.resources
 C:\Users\skear\OneDrive\Documents\GitHub\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Game2P.resources
 C:\Users\skear\OneDrive\Documents\GitHub\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Properties.Resources.resources
+C:\Users\skear\OneDrive\Documents\GitHub\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.GameOver.resources
+C:\Users\skear\OneDrive\Documents\GitHub\ConnectFour_Group3\ConnectFour_Group3\obj\Debug\net8.0-windows\ConnectFour_Group3.Statistics.resources

@@ -1,13 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\",
+  "WorkspaceRootPath": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\sync\\programming\\github\\connectfour_group3\\connectfour_group3\\game2p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\game2p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\game2p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\game1p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\game1p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\connectfour_group3\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\statistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\statistics.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\statistics.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\connectfour_group3\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\gameover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\connectfour_group3\\game1p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\game1p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\connectfour_group3\\game2p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\game2p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\sync\\programming\\github\\connectfour_group3\\connectfour_group3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\gfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\gfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|c:\\users\\skear\\onedrive\\documents\\github\\connectfour_group3\\connectfour_group3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{431BC450-1B9D-4C77-93CC-F62CAC1C6A24}|ConnectFour_Group3\\ConnectFour_Group3.csproj|solutionrelative:connectfour_group3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,32 +62,161 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1161,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game2P.cs [Design]",
-              "DocumentMoniker": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs",
-              "RelativeDocumentMoniker": "ConnectFour_Group3\\Game2P.cs",
-              "ToolTip": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs [Design]",
-              "RelativeToolTip": "ConnectFour_Group3\\Game2P.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "Statistics.txt",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Statistics.txt",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Statistics.txt",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Statistics.txt",
+              "RelativeToolTip": "ConnectFour_Group3\\Statistics.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-02T02:30:46.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Statistics.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Statistics.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Statistics.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Statistics.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\Statistics.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T15:03:34.808Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-02T02:27:39.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\MainForm.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\MainForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:26:32.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\MainForm.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\MainForm.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:26:06.951Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\Program.cs",
-              "RelativeDocumentMoniker": "ConnectFour_Group3\\Program.cs",
-              "ToolTip": "C:\\Sync\\Programming\\Github\\ConnectFour_Group3\\ConnectFour_Group3\\Program.cs",
-              "RelativeToolTip": "ConnectFour_Group3\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Game1P.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game1P.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Game1P.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game1P.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\Game1P.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAApwKcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T15:48:01.466Z",
+              "WhenOpened": "2025-05-01T19:27:50.695Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game1P.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game1P.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Game1P.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game1P.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\Game1P.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:23:22.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game2P.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Game2P.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\Game2P.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAiwKsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:27:37.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameOver.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\GameOver.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\GameOver.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\GameOver.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\GameOver.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T02:15:43.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameOver.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\GameOver.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\GameOver.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\GameOver.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\GameOver.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T02:16:02.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Program.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Program.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Program.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T15:48:01.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Gfx.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Gfx.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Gfx.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Gfx.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\Gfx.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwDoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T01:53:50.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Game2P.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Game2P.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Game2P.cs [Design]",
+              "RelativeToolTip": "ConnectFour_Group3\\Game2P.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T15:03:34.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Board.cs",
+              "RelativeDocumentMoniker": "ConnectFour_Group3\\Board.cs",
+              "ToolTip": "C:\\Users\\skear\\OneDrive\\Documents\\GitHub\\ConnectFour_Group3\\ConnectFour_Group3\\Board.cs",
+              "RelativeToolTip": "ConnectFour_Group3\\Board.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAIwJEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:36:18.911Z"
             }
           ]
         }

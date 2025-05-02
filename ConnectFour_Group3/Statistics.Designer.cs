@@ -31,15 +31,15 @@ partial class Statistics
     /// </summary>
     private void InitializeComponent()
     {
-        BackButton = new System.Windows.Forms.Button();
-        ExitButton = new System.Windows.Forms.Button();
+        BackButton = new Button();
+        ExitButton = new Button();
         SuspendLayout();
         // 
         // BackButton
         // 
-        BackButton.Location = new System.Drawing.Point(484, 12);
+        BackButton.Location = new Point(484, 12);
         BackButton.Name = "BackButton";
-        BackButton.Size = new System.Drawing.Size(128, 64);
+        BackButton.Size = new Size(128, 64);
         BackButton.TabIndex = 0;
         BackButton.Text = "Back To Main";
         BackButton.UseVisualStyleBackColor = true;
@@ -47,9 +47,9 @@ partial class Statistics
         // 
         // ExitButton
         // 
-        ExitButton.Location = new System.Drawing.Point(484, 245);
+        ExitButton.Location = new Point(484, 245);
         ExitButton.Name = "ExitButton";
-        ExitButton.Size = new System.Drawing.Size(128, 64);
+        ExitButton.Size = new Size(128, 64);
         ExitButton.TabIndex = 1;
         ExitButton.Text = "Exit";
         ExitButton.UseVisualStyleBackColor = true;
@@ -57,11 +57,12 @@ partial class Statistics
         // 
         // Statistics
         // 
-        AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(624, 321);
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(624, 321);
         Controls.Add(ExitButton);
         Controls.Add(BackButton);
+        Name = "Statistics";
         Text = "Statistics";
         ResumeLayout(false);
     }

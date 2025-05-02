@@ -56,7 +56,7 @@ class Gfx
         return _cells[i];
     }
     
-    private void UpdateCell(int column, int row, int value)
+    public void UpdateCell(int column, int row, int value)
     {
         // Update formula for list of cells
         var i = row * 7 + column;
