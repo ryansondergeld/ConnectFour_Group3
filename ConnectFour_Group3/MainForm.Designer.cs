@@ -32,6 +32,8 @@
             Game2PButton = new System.Windows.Forms.Button();
             StatisticsButton = new System.Windows.Forms.Button();
             ExitButton = new System.Windows.Forms.Button();
+            TitlePictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)TitlePictureBox).BeginInit();
             SuspendLayout();
             // 
             // Game1PButton
@@ -74,19 +76,33 @@
             ExitButton.UseVisualStyleBackColor = true;
             ExitButton.Click += ExitButton_Click;
             // 
+            // TitlePictureBox
+            // 
+            TitlePictureBox.Image = global::ConnectFour_Group3.Properties.Resources.Title;
+            TitlePictureBox.InitialImage = global::ConnectFour_Group3.Properties.Resources.Title;
+            TitlePictureBox.Location = new System.Drawing.Point(140, 49);
+            TitlePictureBox.Name = "TitlePictureBox";
+            TitlePictureBox.Size = new System.Drawing.Size(200, 195);
+            TitlePictureBox.TabIndex = 4;
+            TitlePictureBox.TabStop = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(624, 321);
+            Controls.Add(TitlePictureBox);
             Controls.Add(ExitButton);
             Controls.Add(StatisticsButton);
             Controls.Add(Game2PButton);
             Controls.Add(Game1PButton);
             Text = "Main Menu";
             Move += MainForm_Move;
+            ((System.ComponentModel.ISupportInitialize)TitlePictureBox).EndInit();
             ResumeLayout(false);
         }
+
+        private System.Windows.Forms.PictureBox TitlePictureBox;
 
         private System.Windows.Forms.Button Game1PButton;
         private System.Windows.Forms.Button Game2PButton;

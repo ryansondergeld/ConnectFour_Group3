@@ -85,7 +85,7 @@ public partial class Game1P : Form
         {
             PictureBox p = _gfx.GetCell(i);
             p.MouseClick += ColumnClick;
-            p.MouseEnter += ColumnEnter;  //mouse enter is much more responsive. mouve hover takes a second.
+            p.MouseEnter += ColumnEnter;  //mouse enter is much more responsive. mouse hover takes a second.
             p.MouseLeave += ColumnLeave;
         }
     }
@@ -132,6 +132,7 @@ public partial class Game1P : Form
         // Otherwise, let's put something in that spot
         _board.SetCell(c, r, _turn);
 
+        // Added AI Logic
         did_player_win = _board.CheckWin(c, r, -1, false);
         // logic for Ai's turn
         if (did_player_win == false)
@@ -185,29 +186,6 @@ public partial class Game1P : Form
         File.WriteAllLines("../../../Statistics.txt", new_lines);
     }
     //-------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public bool AiTurn()
     {
         int possible_win_row = _board.AiTurn(2);
@@ -235,7 +213,7 @@ public partial class Game1P : Form
             return _board.CheckWin(strat_row, _board.GetRowAvailable(strat_row), -1, false);
         }
     }
-
+    //-------------------------------------------------------------------------
     public void ColumnEnter(object sender, EventArgs e)
     {
         if (!_playing) { return; }
@@ -254,7 +232,7 @@ public partial class Game1P : Form
         //System.Diagnostics.Debug.WriteLine("HOVER " + c);
 
     }
-
+    //-------------------------------------------------------------------------
     public void ColumnLeave(object sender, EventArgs e)
     {
         _gfx.Update(_board);
